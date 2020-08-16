@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    >
+
+  <TextView
+      android:id="@+id/itemMainHeaderName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Guac de la Costa"
+      android:textSize="16sp"
+      android:textColor="#000"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:textStyle="normal"
+      app:layout_constraintVertical_bias="0.03"
+      app:layout_constraintHorizontal_bias="0.08">
+  </TextView>
+
+    <TextView
+        android:id="@+id/itemSubTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tortilas de mais, fruit de la passion , mango"
+        android:textSize="12sp"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="italic"
+        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.14">
+    </TextView>
+
+    <TextView
+        android:id="@+id/itemCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 7"
+        android:textSize="16sp"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.06">
+    </TextView>
+
+    <Button
+        android:id="@+id/addItemBtn"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Add"
+        android:textSize = "12sp"
+        android:visibility="invisible"
+        android:textColor="#fff"
+        android:background="#2F3763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintVertical_bias="0.25">
+    </Button>
+
+  <ImageButton
+      android:id="@+id/minusBtn"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:visibility="invisible"
+      android:background="@drawable/miuns_symbol"
+      app:layout_constraintWidth_percent="0.1"
+      app:layout_constraintHeight_percent="0.2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.825"
+      app:layout_constraintVertical_bias="0.25"
+      >
+
+  </ImageButton>
+
+  <TextView
+      android:id="@+id/itemCountIncDec"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:text="0"
+      android:textAlignment="center"
+      android:visibility="invisible"
+      android:layout_gravity="center_horizontal"
+      app:layout_constraintWidth_percent="0.1"
+      app:layout_constraintHeight_percent="0.2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.9"
+      app:layout_constraintVertical_bias="0.2">
+
+  </TextView>
+
+  <ImageButton
+      android:id="@+id/plusBtn"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:visibility="invisible"
+      android:background="@drawable/plus_symbol"
+      app:layout_constraintWidth_percent="0.05"
+      app:layout_constraintHeight_percent="0.2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.95"
+      app:layout_constraintVertical_bias="0.25">
+  </ImageButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

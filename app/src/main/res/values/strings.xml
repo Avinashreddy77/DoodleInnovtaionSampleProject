@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DoodleInnovationSampleProject</string>
+    <string name="cart_items">[ %1$s  Items ]</string>
+</resources>
